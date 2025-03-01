@@ -1,0 +1,19 @@
+{
+    "id": 123,
+    "name": "Alice",
+    "age": 25,
+    "email": "alice@example.com",
+    "isSubscribed": true,
+    "orders": [
+      {
+        "id": "ord001",
+        "total": 50.25,
+        "items": ["item1", "item2"]
+      },
+      {
+        "id": "ord002",
+        "total": 75.50,
+        "items": ["item3", "item4"]
+      }
+    ]
+  }
