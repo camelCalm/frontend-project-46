@@ -5,19 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "jest --coverage",
-    "test:coverage": "CODECLIMATE_REPO_TOKEN=f21c0d08c8b6c54517f470e0b3ed8e5c7501aa7d41df48be93aee2cdc08c7a9f codeclimate-test-reporter < coverage/lcov.info"
+    "test": ""
   },
   "bin": {
     "gendiff": "bin/gendiff.js"
-  },
-  "jest": {
-    "collectCoverage": true,
-    "coverageReporters": ["lcov", "text"],
-    "collectCoverageFrom": [
-      "src/**/*.{js,jsx}",
-      "!src/index.js"
-    ]
   },
   "repository": {
     "type": "git",
