@@ -9,8 +9,5 @@ export default (firstFile, secondFile) => {
     let typeOfFirstFile = path.resolve(currentDir, './public', firstFile);
     let typeOfSecondFile = path.resolve(currentDir, './public', secondFile);
 
-    return [
-        parseJSON(readFileSync(typeOfFirstFile)),
-        parseJSON(readFileSync(typeOfSecondFile))
-    ];
+    return parseJSON(readFileSync(typeOfFirstFile), readFileSync(typeOfSecondFile));
 };

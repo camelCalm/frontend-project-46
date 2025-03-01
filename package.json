@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/camelCalm/frontend-project-46#readme",
   "dependencies": {
-    "commander": "^13.1.0"
+    "commander": "^13.1.0",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "codeclimate-test-reporter": "^0.5.1",

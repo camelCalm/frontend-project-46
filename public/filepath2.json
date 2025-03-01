@@ -1,19 +1,5 @@
 {
-    "id": 124,
-    "name": "Ivan",
-    "age": 15,
-    "email": "ivan@example.com",
-    "isSubscribed": false,
-    "orders": [
-      {
-        "id": "ord003",
-        "total": 60.25,
-        "items": ["item5", "item6"]
-      },
-      {
-        "id": "ord004",
-        "total": 13.50,
-        "items": ["item7", "item8"]
-      }
-    ]
-  }
+  "timeout": 20,
+  "verbose": true,
+  "host": "hexlet.io"
+}
