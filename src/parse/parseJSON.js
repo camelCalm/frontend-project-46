@@ -34,7 +34,6 @@ export default (firFile, secFile) => {
         }
     })
 
-    console.log(
-        `{\n${result.join('\n')}\n}`
-    );
+    let str = `{\n${result.join('\n')}\n}`;
+    return (str);
 };

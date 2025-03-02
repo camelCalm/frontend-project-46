@@ -4,10 +4,10 @@ import path from 'node:path';
 import parseJSON from './parse/parseJSON.js';
 
 export default (firstFile, secondFile) => {
-    let currentDir = cwd();
+    let __dirname = cwd();
 
-    let typeOfFirstFile = path.resolve(currentDir, './public', firstFile);
-    let typeOfSecondFile = path.resolve(currentDir, './public', secondFile);
+    let typeOfFirstFile = path.resolve(__dirname, '__fixtures__', firstFile);
+    let typeOfSecondFile = path.resolve(__dirname, '__fixtures__', secondFile);
 
-    return parseJSON(readFileSync(typeOfFirstFile), readFileSync(typeOfSecondFile));
+    console.log(parseJSON(readFileSync(typeOfFirstFile), readFileSync(typeOfSecondFile)));
 };

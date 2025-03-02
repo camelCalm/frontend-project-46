@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "test": ""
+    "test": "jest"
   },
   "bin": {
     "gendiff": "bin/gendiff.js"
@@ -25,7 +25,10 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
+    "@eslint/js": "^9.21.0",
     "codeclimate-test-reporter": "^0.5.1",
+    "eslint": "^9.21.0",
+    "globals": "^16.0.0",
     "jest": "^29.7.0"
   }
 }

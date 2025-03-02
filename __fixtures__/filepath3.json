@@ -1,0 +1,6 @@
+{
+  "host": "toyou.io",
+  "timeout": 55,
+  "proxy": "124.444.53.22",
+  "follow": true
+}
