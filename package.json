@@ -1,0 +1,23 @@
+{
+  "name": "frontend-project-46",
+  "version": "1.0.0",
+  "description": "[![Actions Status](https://github.com/camelCalm/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/camelCalm/frontend-project-46/actions)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camelCalm/frontend-project-46.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camelCalm/frontend-project-46/issues"
+  },
+  "homepage": "https://github.com/camelCalm/frontend-project-46#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
