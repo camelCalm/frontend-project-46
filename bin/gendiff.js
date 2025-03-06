@@ -1,5 +1,6 @@
 #! /usr/bin/env node
 
+import index from '../src/index.js';
 import { Command } from 'commander';
 
 let program = new Command();
@@ -10,8 +11,7 @@ program
     .option('-f, --format', '[type]  output format')
     .arguments('<filepath1> <filepath2>')
     .action((filepath1, filepath2) => {
-        console.log(filepath1);
-        console.log(filepath2);
+        index(filepath1, filepath2)
     });
 
 program.parse()
