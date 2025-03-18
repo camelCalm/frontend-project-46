@@ -1,9 +1,12 @@
 /* eslint-disable */
 
-import stylish from "../src/formatters/stylish.js";
 import { readFileSync } from "node:fs";
 import { cwd } from "node:process";
 import path from "node:path";
+import stylish from "../src/formatters/stylish.js";
+import plain from "../src/formatters/plain.js";
+import getDiff from "../src/getDiff.js";
+import getFormat from "../src/getFormat.js";
 
 const getPath = (filename) => {
   const __dirname = cwd();
@@ -12,15 +15,14 @@ const getPath = (filename) => {
 
 const readFile = (path) => readFileSync(path, 'utf-8');
 
-const jsonFile1 = readFile(getPath('file1.json'));
-const jsonFile2 = readFile(getPath('file2.json'));
 const jsonFile3 = readFile(getPath('file3.json'));
 const jsonFile4 = readFile(getPath('file4.json'));
-
-
-const stylishRes1 = readFile(getPath('stylishRes1.txt'));
-const stylishRes2 = readFile(getPath('stylishRes2.txt'));
+const stylishRes = readFile(getPath('stylishRes.txt'))
 
 test("Check stylish format", () => {
-  // expect(stylish(jsonFile3, jsonFile4)).toBe(stylishRes2);
+  const result = stylish(getDiff(getFormat(jsonFile3, 'file3.json'), getFormat(jsonFile4, 'file4.json')));
+  expect(result).toBe(stylishRes);
+});
+
+test("Check plain format", () => {
 });
