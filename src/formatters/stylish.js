@@ -1,5 +1,3 @@
-import _ from "lodash";
-
 const stylish = (object) => {
   const space = (depth, spaceBeforeKey = 2) => " ".repeat((depth * 4) - (spaceBeforeKey));
 
