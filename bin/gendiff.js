@@ -1,4 +1,4 @@
-#! /usr/bin/env node
+#!/usr/bin/env node
 
 import index from '../src/formatters/index.js';
 import { Command } from 'commander';

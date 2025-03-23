@@ -21,6 +21,8 @@ export default (format = 'stylish', filepath1, filepath2) => {
             return stylish(difference);
         case 'plain':
             return plain(difference);
+        case 'json':
+            return JSON.stringify(difference, null, 2);
         default:
             return 'not correct format';
     }
