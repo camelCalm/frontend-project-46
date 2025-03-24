@@ -1,5 +1,5 @@
 install:
-	npm ci
+	sudo npm ci
 	npm link
 
 publish:
